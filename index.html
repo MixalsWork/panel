@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main container-fluid">
+        <div class="row d-flex main__row">
+            <div class="sidebar col-xl-3 d-flex flex-column">
+                <div class="sidebar__logo">
+                    <img src="img/logo.svg" alt="logo" class="sidebar__img">
+                    <div class="sidebar__title"><span class="sidebar__title--white">Dash</span> Light</div>
+                </div>
+                <div class="sidebar__line">
+                    <span class="sidebar__dot"></span>
+                    <span class="sidebar__dot"></span>
+                    <span class="sidebar__dot"></span> 
+                    <span class="sidebar__lines"></span>
+                </div>
+                <div class="nav flex-column nav-pills nav__list sidebar__list" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active nav__item"  data-toggle="pill" href="#Revenues" role="tab" aria-selected="true">Revenues</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#Gross" role="tab" aria-selected="false">Gross Profit MMAs</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#Total" role="tab" aria-selected="false">Total Web Sessions</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#Web" role="tab" aria-selected="false">Web Sales</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#Avg" role="tab" aria-selected="false">Avg Order Sizes</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#New" role="tab" aria-selected="false">New Customer Sales Ord...</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#Sales" role="tab" aria-selected="false">Sales Orders Counts</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#Sessions" role="tab" aria-selected="false">Total Web Sessions</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#Visitor" role="tab" aria-selected="false">Visitor Web Sessions</a>
+                    <a class="nav-link nav__item"  data-toggle="pill" href="#Forms" role="tab" aria-selected="false">Web Forms Submissions</a>
+                  </div>
+                <div class="sidebar__action row mt-auto">
+                    <button type="button" class="btn  sidebar__action-button col-12">SETTINGS <img src="img/gears.svg" alt="gears" class="sidebar__action-img"></button>
+                    <button type="button" class="btn  sidebar__action-button col-12">LOG OUT <img src="img/arrow.svg" alt="arrow" class="sidebar__action-img"></button>
+                </div>
+            </div>
+              <div class="tab-content content col-xl-9">
+                <div class="content__wrapper">
+                    <div class="container content__button-container">
+                        <button data-toggle="collapse" data-target="#revenues-content" class="content__filter-button">Filters</button>
+                    </div>
+                    <div class="container filter collapse" id="revenues-content">
+                        <div class="row filter__year col-xl-10 col-lg-12 m-auto justify-content-between">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label filter__year-text" for="customRadioInline1">2018</label>
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" checked>
+                                    <label class="custom-control-label filter__year-text" for="customRadioInline2">2019</label>
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label filter__year-text" for="customRadioInline3">2020</label>
+                                  </div>
+                        </div>
+                        <div class="row filter__quarter col-xl-10 col-lg-12 m-auto justify-content-between">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline1">
+                                    <label class="custom-control-label" for="defaultInline1">Q1</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline2" checked>
+                                    <label class="custom-control-label" for="defaultInline2">Q2</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline3">
+                                    <label class="custom-control-label" for="defaultInline3">Q3</label>
+                                </div>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline4">
+                                    <label class="custom-control-label" for="defaultInline4">Q4</label>
+                                </div>
+                        </div>    
+                        <div class="row filter__action col-xl-10 col-lg-12 m-auto justify-content-between">
+                                <button type="button" class="btn filter__action-button">Primary</button>
+                                <button type="button" class="btn filter__action-button">Secondary</button>
+                                <button type="button" class="btn filter__action-button">Success</button>
+                                <button type="button" class="btn filter__action-button">Danger</button>
+                        </div>
+                    </div>
+                    <div class="container chart">
+                        <div class="row chart-container col-12 m-auto">
+                            <canvas id="myChart" width="200" height="200"></canvas>
+                        </div>
+                    </div>
+                    <!-- <div class="tab-pane fade" id="Gross" role="tabpanel">Gross Profit MMAs</div>
+                    <div class="tab-pane fade" id="Total" role="tabpanel">Total</div>
+                    <div class="tab-pane fade" id="Web" role="tabpanel">Web</div>
+                    <div class="tab-pane fade" id="Avg" role="tabpanel">Avg</div>
+                    <div class="tab-pane fade" id="New" role="tabpanel">New</div>
+                    <div class="tab-pane fade" id="Sales" role="tabpanel">Sales</div>
+                    <div class="tab-pane fade" id="Sessions" role="tabpanel">Sessions</div>
+                    <div class="tab-pane fade" id="Visitor" role="tabpanel">Visitor</div>
+                    <div class="tab-pane fade" id="Forms" role="tabpanel">Forms</div> -->
+                </div>
+            </div>
+        </div>
+           
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/MyChart.js"></script>
+
+</body>
+</html>

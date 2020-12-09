@@ -1,0 +1,322 @@
+.sidebar {
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.sidebar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sidebar__img {
+  padding-right: 3px;
+}
+
+.sidebar__list {
+  padding-bottom: 20px;
+}
+
+.sidebar__title {
+  padding-bottom: 12px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.sidebar__title--white {
+  font-weight: 500;
+}
+
+.sidebar__line {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.sidebar__dot {
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  margin-right: 2px;
+  display: block;
+  border-radius: 50%;
+}
+
+.sidebar__lines {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.sidebar__action {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  justify-self: end;
+  padding-bottom: 20px;
+}
+
+.sidebar__action-button {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar__action-button:hover {
+  color: #ffffff;
+}
+
+.sidebar__action-img {
+  padding-left: 10px;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav__item {
+  background-color: transparent;
+}
+
+.nav-pills .nav-link.active::after,
+.nav-pills .show > .nav__item::after {
+  color: #ffffff;
+  content: url("../img/Union.svg");
+  position: absolute;
+  right: -55px;
+  top: 3px;
+}
+
+.nav-pills .nav-link.active::before,
+.nav-pills .show > .nav__item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #63ECDB;
+  position: absolute;
+  right: -49px;
+  top: 17px;
+  z-index: 2;
+}
+
+.nav__list {
+  padding-right: 40px;
+}
+
+.nav__item {
+  white-space: nowrap;
+  text-align: right;
+  position: relative;
+  padding: .5rem 0;
+}
+
+.content {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 71px;
+}
+
+.content__wrapper [aria-expanded="true"]::before {
+  content: '-';
+  position: absolute;
+  left: 29px;
+}
+
+.content__wrapper [aria-expanded="true"] {
+  border: 1px solid #E5E5E5;
+  border-bottom: none;
+  border-radius: 0;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+.content__button-container {
+  padding: 0;
+}
+
+.content__filter-button {
+  text-transform: uppercase;
+  border: 1px solid #63ECDB;
+  border-radius: 52px;
+  padding: 12px 29px 12px 53px;
+  background-color: transparent;
+  color: #2f80ed;
+  font-weight: 500;
+  outline: none !important;
+  position: relative;
+}
+
+.content__filter-button::before {
+  content: '+';
+  position: absolute;
+  left: 29px;
+}
+
+.filter {
+  border: 1px solid #E5E5E5;
+  -webkit-box-shadow: 0px 10px 16px 0px rgba(79, 79, 79, 0.1);
+  box-shadow: 0px 10px 16px 0px rgba(79, 79, 79, 0.1);
+  border-radius: 18px;
+  border-top-left-radius: 0;
+}
+
+.filter__quarter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding-top: 52px;
+  padding-bottom: 83px;
+}
+
+.filter__quarter .custom-control-input ~ .custom-control-label::before {
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.filter__quarter .custom-control-label {
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #6F6F6F;
+  font-weight: 500;
+}
+
+.filter__quarter .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("../img/Rectangle-blue.svg");
+}
+
+.filter__quarter .custom-checkbox {
+  cursor: pointer;
+}
+
+.filter__quarter .custom-control-label {
+  cursor: pointer;
+}
+
+.filter__year {
+  border-bottom: 1px solid #E5E5E5;
+  padding-top: 60px;
+  padding-bottom: 22px;
+}
+
+.filter__year-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #6F6F6F;
+  cursor: pointer;
+}
+
+.filter__year .custom-control-input ~ .custom-control-label::before {
+  width: 137px;
+  height: 5px;
+  background: transparent;
+  border-radius: 0;
+  outline: none !important;
+  top: 40px;
+  left: -40px;
+  border: none;
+}
+
+.filter__year .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #2F80ED;
+  background-color: #2F80ED;
+  outline: none !important;
+}
+
+.filter__year .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: none;
+  outline: none !important;
+}
+
+.filter__action {
+  padding-bottom: 50px;
+}
+
+.filter__action-button {
+  border: 1px solid #2F80ED;
+  color: #2F80ED;
+  border-radius: 52px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 138px;
+  height: 34px;
+}
+
+.filter__action-button:hover {
+  background-color: #2F80ED;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    padding: 15px;
+  }
+
+  .filter__action-button {
+    margin: 15px;
+    width: 100px;
+  }
+}
+
+.chart {
+  margin-top: 30px;
+  min-height: 459px;
+  border: 1px solid #E5E5E5;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 16px 0px rgba(79, 79, 79, 0.1);
+  box-shadow: 0px 10px 16px 0px rgba(79, 79, 79, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.chart-container {
+  min-height: 300px;
+  padding: 0 40px;
+}
+
+.main {
+  background: #2F80ED;
+  padding: 0;
+}
+
+.main__row {
+  margin: 0;
+  min-height: 100vh;
+}
